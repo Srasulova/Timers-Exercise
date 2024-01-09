@@ -1,3 +1,4 @@
+// countdown exercise
 function countDown(num) {
   for (let i = num; i >= 0; i--) {
     if (i === 0) {
@@ -10,8 +11,7 @@ function countDown(num) {
 
 setInterval(countDown(5), 1000);
 
-console.log("test");
-
+// randomGame exercise
 let counter = 0;
 
 let randomNumber = function () {
