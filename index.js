@@ -9,3 +9,5 @@ function countDown(num) {
 }
 
 setInterval(countDown(5), 1000);
+
+console.log("test");
