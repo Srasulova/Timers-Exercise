@@ -11,3 +11,23 @@ function countDown(num) {
 setInterval(countDown(5), 1000);
 
 console.log("test");
+
+let counter = 0;
+
+let randomNumber = function () {
+  let randomNum = Math.random();
+  console.log(randomNum);
+
+  if (randomNum < 0.75) {
+    counter++;
+    console.log(counter);
+  } else {
+    clearInterval(randomGame);
+    console.log(
+      `The number of tries it took before we found a number greater than .75: ${counter}`
+    );
+  }
+  return randomNum;
+};
+
+let randomGame = setInterval(randomNumber, 1000);
